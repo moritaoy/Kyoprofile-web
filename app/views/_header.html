@@ -1,0 +1,62 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sky Judge</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <style type="text/css">
+        <!--
+        .sky-b{
+            background-image: url("img/sky.png");
+            background-position: bottom;
+            background-size: auto 100%;
+        }
+
+        .container{
+            margin-bottom: 50px;
+        }
+        -->
+    </style>
+
+    <div class="bs-component">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand text-info" href="#">Sky Judge</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Problem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">User</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Others
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tutorial</a>
+                            <a class="dropdown-item" href="#">Server Status</a>
+                            <a class="dropdown-item" href="#">Contact</a>
+                        </div>
+                    </li>
+                    </a>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Problem ID">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Go</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</head>
+{{ end }}

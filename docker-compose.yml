@@ -5,3 +5,4 @@ services:
     tty: true # コンテナの起動永続化
     volumes:
       - .:/go/src/work # マウントディレクトリ指定
+    entrypoint: bash -c " hostname -i && go run main.go"

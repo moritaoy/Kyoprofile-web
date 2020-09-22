@@ -6,3 +6,5 @@ RUN mkdir /go/src/work
 WORKDIR /go/src/work
 # ホストのファイルをコンテナの作業ディレクトリに移行
 ADD . /go/src/work
+WORKDIR /go/src/work/app
+RUN go mod download
